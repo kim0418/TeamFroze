@@ -1,44 +1,12 @@
 detect: weights=['yolov5s.pt'], source=0, data=data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_csv=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
 YOLOv5 ð 2023-9-11 Python-3.10.7 torch-2.0.1 CPU
-
-Fusing layers... 
+ 94%|ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ             | 13.2M/14.1M [00:02<00:00, 5.00MB/s100%|ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ| 14.1M/14.1M [00:02<00:00, 4.99MB/s] 80%|âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ                                       | 10.8M/14.1M [00:02<00:00, 5.26MB/s]Fusing layers... ââââââââââââââââââââââââââ                                                                                                                                                              | 2.24M/14.1M [00:00<00:02, 4.71MB/s]
 YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
 WARNING âï¸ Environment does not support cv2.imshow() or PIL Image.show()
 
-[ WARN:0@7.387] global cap_v4l.cpp:982 open VIDEOIO(V4L2:/dev/video0): can't open camera by index
-[ WARN:0@7.388] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.388] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.389] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.390] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.391] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.391] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.391] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.391] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.391] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.392] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.392] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.392] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.392] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.392] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.393] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ WARN:0@7.394] global obsensor_stream_channel_v4l2.cpp:82 xioctl ioctl: fd=-1, req=-2140645888
-[ WARN:0@7.394] global obsensor_stream_channel_v4l2.cpp:138 queryUvcDeviceInfoList ioctl error return: 9
-[ERROR:0@7.394] global obsensor_uvc_stream_channel.cpp:156 getStreamChannelGroup Camera index out of range
+[ WARN:0@12.673] global cap_v4l.cpp:2060 getProperty VIDEOIO(V4L2:/dev/video0): Unable to get camera FPS
+1/1: 0...  Success (inf frames 640x480 at 99.00 FPS)
+
 Traceback (most recent call last):
   File "/usr/src/app/detect.py", line 285, in <module>
     main(opt)
@@ -48,6 +16,12 @@ Traceback (most recent call last):
     return func(*args, **kwargs)
   File "/usr/src/app/detect.py", line 109, in run
     dataset = LoadStreams(source, img_size=imgsz, stride=stride, auto=pt, vid_stride=vid_stride)
-  File "/usr/src/app/utils/dataloaders.py", line 367, in __init__
-    assert cap.isOpened(), f'{st}Failed to open {s}'
-AssertionError: 1/1: 0... Failed to open 0
+  File "/usr/src/app/utils/dataloaders.py", line 381, in __init__
+    s = np.stack([letterbox(x, img_size, stride=stride, auto=auto)[0].shape for x in self.imgs])
+  File "/usr/src/app/utils/dataloaders.py", line 381, in <listcomp>
+    s = np.stack([letterbox(x, img_size, stride=stride, auto=auto)[0].shape for x in self.imgs])
+  File "/usr/src/app/utils/augmentations.py", line 113, in letterbox
+    shape = im.shape[:2]  # current shape [height, width]
+AttributeError: 'NoneType' object has no attribute 'shape'
+terminate called without an active exception
+Aborted (core dumped)
