@@ -1,0 +1,7 @@
+Eventually, it was impossible to solve, so we implemented it as a docker-container.
+python3 detect.py --source data/images --weights yolov5s.The pt is executed. 그런데 python3 detect.py --source 0 --weights yolov5s.The pt does not work. I will attach the error that occurs when executing the code below.
+
+I confirmed that the camera is operating, and there is no abnormality.
+
+Code when implementing docker-container:
+sudo docker container run -it -d --name <container_name> --privileged --device /dev/vchiq --device /dev/video0:/dev/video0 ultralytics/yolov5:latest-arm64
