@@ -33,3 +33,8 @@ lsof: WARNING: can't stat() fuse.gvfsd-fuse file system /run/user/1000/gvfs
       Output information may be incomplete.
 lsof: WARNING: can't stat() fuse.portal file system /run/user/1000/doc
       Output information may be incomplete.
+
+
+COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+pipewire  1392 froze   48u   CHR  81,14      0t0  632 /dev/video0
+wireplumb 1396 froze   42u   CHR  81,14      0t0  632 /dev/video0
