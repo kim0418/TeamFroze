@@ -1,10 +1,11 @@
 detect: weights=['yolov5s.pt'], source=0, data=data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_csv=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
 YOLOv5 ð 2023-9-11 Python-3.10.7 torch-2.0.1 CPU
- 94%|ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ             | 13.2M/14.1M [00:02<00:00, 5.00MB/s100%|ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ| 14.1M/14.1M [00:02<00:00, 4.99MB/s] 80%|âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ                                       | 10.8M/14.1M [00:02<00:00, 5.26MB/s]Fusing layers... ââââââââââââââââââââââââââ                                                                                                                                                              | 2.24M/14.1M [00:00<00:02, 4.71MB/s]
+
+Fusing layers... 
 YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
 WARNING âï¸ Environment does not support cv2.imshow() or PIL Image.show()
 
-[ WARN:0@12.673] global cap_v4l.cpp:2060 getProperty VIDEOIO(V4L2:/dev/video0): Unable to get camera FPS
+[ WARN:0@7.377] global cap_v4l.cpp:2060 getProperty VIDEOIO(V4L2:/dev/video0): Unable to get camera FPS
 1/1: 0...  Success (inf frames 640x480 at 99.00 FPS)
 
 Traceback (most recent call last):
