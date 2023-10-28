@@ -39,3 +39,29 @@ lsof: WARNING: can't stat() fuse.portal file system /run/user/1000/doc
 COMMAND    PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 pipewire  1392 froze   48u   CHR  81,14      0t0  632 /dev/video0
 wireplumb 1396 froze   42u   CHR  81,14      0t0  632 /dev/video0
+
+
+
+
+
+The Meson build system
+Version: 1.2.3
+Source dir: /usr/src/app/libcamera
+Build dir: /usr/src/app/libcamera/build
+Build type: native build
+Project name: libcamera
+Project version: 0.1.0
+C compiler for the host machine: cc (gcc 12.2.0 "cc (Ubuntu 12.2.0-3ubuntu1) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.39
+
+meson.build:3:0: ERROR: Unknown compiler(s): [['c++'], ['g++'], ['clang++'], ['nvc++'], ['pgc++'], ['icpc'], ['icpx']]
+The following exception(s) were encountered:
+Running `c++ --version` gave "[Errno 2] No such file or directory: 'c++'"
+Running `g++ --version` gave "[Errno 2] No such file or directory: 'g++'"
+Running `clang++ --version` gave "[Errno 2] No such file or directory: 'clang++'"
+Running `nvc++ --version` gave "[Errno 2] No such file or directory: 'nvc++'"
+Running `pgc++ --version` gave "[Errno 2] No such file or directory: 'pgc++'"
+Running `icpc --version` gave "[Errno 2] No such file or directory: 'icpc'"
+Running `icpx --version` gave "[Errno 2] No such file or directory: 'icpx'"
+
+A full log can be found at /usr/src/app/libcamera/build/meson-logs/meson-log.txt
