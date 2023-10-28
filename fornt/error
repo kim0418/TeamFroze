@@ -65,3 +65,11 @@ Running `icpc --version` gave "[Errno 2] No such file or directory: 'icpc'"
 Running `icpx --version` gave "[Errno 2] No such file or directory: 'icpx'"
 
 A full log can be found at /usr/src/app/libcamera/build/meson-logs/meson-log.txt
+
+
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ g++ : Depends: g++-12 (>= 12.2.0-1~) but it is not going to be installed
+ libboost-dev : Depends: libboost1.74-dev but it is not going to be installed
+ nettle-dev : Depends: libgmp-dev but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
