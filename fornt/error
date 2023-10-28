@@ -73,3 +73,68 @@ The following packages have unmet dependencies:
  libboost-dev : Depends: libboost1.74-dev but it is not going to be installed
  nettle-dev : Depends: libgmp-dev but it is not going to be installed
 E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+
+
+root@8788f23a783e:/usr/src/app# apt --fix-broken install
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Correcting dependencies... Done
+The following packages were automatically installed and are no longer required:
+  dh-elpa-helper emacsen-common libarchive13 libgmp-dev libgmpxx4ldbl libjsoncpp25 librhash0 libtasn1-6-dev libtasn1-doc libuv1 make nettle-dev
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libboost1.74-dev libgmp-dev libgmpxx4ldbl libstdc++-12-dev
+Suggested packages:
+  libboost1.74-doc libboost-atomic1.74-dev libboost-chrono1.74-dev libboost-container1.74-dev libboost-context1.74-dev libboost-contract1.74-dev libboost-coroutine1.74-dev libboost-date-time1.74-dev libboost-exception1.74-dev
+  libboost-fiber1.74-dev libboost-filesystem1.74-dev libboost-graph1.74-dev libboost-graph-parallel1.74-dev libboost-iostreams1.74-dev libboost-locale1.74-dev libboost-log1.74-dev libboost-math1.74-dev libboost-mpi1.74-dev
+  libboost-mpi-python1.74-dev libboost-numpy1.74-dev libboost-program-options1.74-dev libboost-python1.74-dev libboost-random1.74-dev libboost-regex1.74-dev libboost-serialization1.74-dev libboost-stacktrace1.74-dev
+  libboost-system1.74-dev libboost-test1.74-dev libboost-thread1.74-dev libboost-timer1.74-dev libboost-type-erasure1.74-dev libboost-wave1.74-dev libboost1.74-tools-dev libmpfrc++-dev libntl-dev libboost-nowide1.74-dev gmp-doc
+  libgmp10-doc libmpfr-dev libstdc++-12-doc
+The following NEW packages will be installed:
+  libboost1.74-dev libgmp-dev libgmpxx4ldbl libstdc++-12-dev
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+2 not fully installed or removed.
+Need to get 12.1 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Err:1 http://ports.ubuntu.com/ubuntu-ports kinetic/main arm64 libstdc++-12-dev arm64 12.2.0-3ubuntu1
+  404  Not Found [IP: 185.125.190.39 80]
+Err:2 http://ports.ubuntu.com/ubuntu-ports kinetic/main arm64 libboost1.74-dev arm64 1.74.0-17ubuntu1
+  404  Not Found [IP: 185.125.190.39 80]
+Err:3 http://ports.ubuntu.com/ubuntu-ports kinetic/main arm64 libgmpxx4ldbl arm64 2:6.2.1+dfsg1-1ubuntu2
+  404  Not Found [IP: 185.125.190.39 80]
+Err:4 http://ports.ubuntu.com/ubuntu-ports kinetic/main arm64 libgmp-dev arm64 2:6.2.1+dfsg1-1ubuntu2
+  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-12/libstdc%2b%2b-12-dev_12.2.0-3ubuntu1_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/b/boost1.74/libboost1.74-dev_1.74.0-17ubuntu1_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/g/gmp/libgmpxx4ldbl_6.2.1%2bdfsg1-1ubuntu2_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/g/gmp/libgmp-dev_6.2.1%2bdfsg1-1ubuntu2_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+root@8788f23a783e:/usr/src/app# apt-get update
+Ign:1 http://ports.ubuntu.com/ubuntu-ports kinetic InRelease
+Ign:2 http://ports.ubuntu.com/ubuntu-ports kinetic-updates InRelease
+Ign:3 http://ports.ubuntu.com/ubuntu-ports kinetic-backports InRelease
+Ign:4 http://ports.ubuntu.com/ubuntu-ports kinetic-security InRelease
+Err:5 http://ports.ubuntu.com/ubuntu-ports kinetic Release
+  404  Not Found [IP: 185.125.190.36 80]
+Err:6 http://ports.ubuntu.com/ubuntu-ports kinetic-updates Release
+  404  Not Found [IP: 185.125.190.36 80]
+Err:7 http://ports.ubuntu.com/ubuntu-ports kinetic-backports Release
+  404  Not Found [IP: 185.125.190.36 80]
+Err:8 http://ports.ubuntu.com/ubuntu-ports kinetic-security Release
+  404  Not Found [IP: 185.125.190.36 80]
+Reading package lists... Done
+E: The repository 'http://ports.ubuntu.com/ubuntu-ports kinetic Release' no longer has a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+E: The repository 'http://ports.ubuntu.com/ubuntu-ports kinetic-updates Release' no longer has a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+E: The repository 'http://ports.ubuntu.com/ubuntu-ports kinetic-backports Release' no longer has a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+E: The repository 'http://ports.ubuntu.com/ubuntu-ports kinetic-security Release' no longer has a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+root@8788f23a783e:/usr/src/app# 
