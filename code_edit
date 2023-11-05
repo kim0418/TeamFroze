@@ -1,0 +1,15 @@
+[ WARN:0@7.294] global cap_v4l.cpp:2060 getProperty VIDEOIO(V4L2:/dev/video0): Unable to get camera FPS
+Traceback (most recent call last):
+  File "/usr/src/app/detect.py", line 285, in <module>
+    main(opt)
+  File "/usr/src/app/detect.py", line 280, in main
+    run(**vars(opt))
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/src/app/detect.py", line 109, in run
+    dataset = LoadStreams(source, img_size=imgsz, stride=stride, auto=pt, vid_stride=vid_stride)
+  File "/usr/src/app/utils/dataloaders.py", line 377, in __init__
+    cv2.imshow('frame',self.imgs[i])
+  File "/usr/src/app/utils/general.py", line 1112, in imshow
+    imshow_(path.encode('unicode_escape').decode(), im)
+cv2.error: OpenCV(4.8.0) /io/opencv/modules/highgui/src/window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'imshow'
