@@ -1,0 +1,8 @@
+froze@raspberrypi:~ $ libcamera-hello
+Made X/EGL preview window
+[4:10:38.502181136] [6093]  INFO Camera camera_manager.cpp:284 libcamera v0.1.0+52-a858d20b
+[4:10:38.562300268] [6102]  WARN RPiSdn sdn.cpp:39 Using legacy SDN tuning - please consider moving SDN inside rpi.denoise
+[4:10:38.565074485] [6102]  INFO RPI vc4.cpp:387 Registered camera /base/soc/i2c0mux/i2c@1/ov5647@36 to Unicam device /dev/media4 and ISP device /dev/media0
+Stream configuration adjusted
+[4:10:38.565872343] [6093]  INFO Camera camera.cpp:1213 configuring streams: (0) 1296x972-YUV420
+[4:10:38.566323244] [6102]  INFO RPI vc4.cpp:549 Sensor: /base/soc/i2c0mux/i2c@1/ov5647@36 - Selected sensor format: 1296x972-SGBRG10_1X10 - Selected unicam format: 1296x972-pGAA
