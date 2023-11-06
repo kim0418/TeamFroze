@@ -1,16 +1,9 @@
-import os
-import v4l2
+import cv2
 
-# 비디오 장치를 차례로 테스트
-for i in range(31):  # 31은 테스트할 비디오 장치의 수를 의미합니다.
-    try:
-        vd = open('/dev/video{}'.format(i), 'rw')
-        cp = v4l2.v4l2_capability()
-        fcntl.ioctl(vd, v4l2.VIDIOC_QUERYCAP, cp)
-
-        if cp.capabilities & v4l2.V4L2_CAP_VIDEO_CAPTURE:
-            print('/dev/video{} supports V4L2.'.format(i))
-        else:
-            print('/dev/video{} does not support V4L2.'.format(i))
-    except IOError:
-        print('/dev/video{} does not exist.'.format(i))
+for i in range(31):
+    cap = cv2.VideoCapture(i)
+    if cap is None or not cap.isOpened():
+        print('Warning: unable to open video source: /dev/video{}'.format(i))
+    else:
+        print('/dev/video{} is open.'.format(i))
+        cap.release()  # 장치를 다시 닫습니다.
