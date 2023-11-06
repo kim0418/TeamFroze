@@ -13,3 +13,9 @@ Traceback (most recent call last):
   File "/usr/src/app/utils/general.py", line 1112, in imshow
     imshow_(path.encode('unicode_escape').decode(), im)
 cv2.error: OpenCV(4.8.0) /io/opencv/modules/highgui/src/window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'imshow'
+
+
+
+
+
+https://www.canva.com/design/DAFzQXogoTQ/XH0AgmUEPqcnNNyBMuvNVw/edit
