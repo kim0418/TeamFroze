@@ -1,3 +1,5 @@
+
+
 froze@raspberrypi:~ $ libcamera-hello
 Made X/EGL preview window
 [4:10:38.502181136] [6093]  INFO Camera camera_manager.cpp:284 libcamera v0.1.0+52-a858d20b
@@ -6,3 +8,14 @@ Made X/EGL preview window
 Stream configuration adjusted
 [4:10:38.565872343] [6093]  INFO Camera camera.cpp:1213 configuring streams: (0) 1296x972-YUV420
 [4:10:38.566323244] [6102]  INFO RPI vc4.cpp:549 Sensor: /base/soc/i2c0mux/i2c@1/ov5647@36 - Selected sensor format: 1296x972-SGBRG10_1X10 - Selected unicam format: 1296x972-pGAA
+
+
+
+
+
+
+
+Nov 07 13:59:31 raspberrypi dbus-daemon[951]: [session uid=1000 pid=951] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.41' (uid=1000 pid=4171 comm="eom file:///home/froze/Picures/test.jpg")
+Nov 07 13:59:31 raspberrypi systemd[918]: Starting dconf.service - User preferences database...
+Nov 07 13:59:31 raspberrypi dbus-daemon[951]: [session uid=1000 pid=951] Successfully activated service 'ca.desrt.dconf'
+Nov 07 13:59:31 raspberrypi systemd[918]: Started dconf.service - User preferences database.
