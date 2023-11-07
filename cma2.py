@@ -2,6 +2,7 @@ import cv2
 
 cap = cv2.VideoCapture(0)  # /dev/video14 장치를 사용
 cv2.imshow(cap)
+cv2.waitKey(0)
 cap.set(cv2.CAP_PROP_FPS,30)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1296)  # 프레임 너비를 1296으로 설정
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 972)
