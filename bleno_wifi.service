@@ -1,0 +1,14 @@
+[Unit]
+Description=Bleno WiFi Setup Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /path/to/bleno_wifi.js
+Restart=always
+User=pi
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/path/to/
+
+[Install]
+WantedBy=multi-user.target
