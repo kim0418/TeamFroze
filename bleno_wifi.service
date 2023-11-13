@@ -3,7 +3,7 @@ Description=Bleno WiFi Setup Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node /path/to/bleno_wifi.js
+ExecStart=/usr/bin/node /home/froze/bleno_wifi.js
 Restart=always
 User=pi
 Environment=PATH=/usr/bin:/usr/local/bin
