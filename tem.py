@@ -42,8 +42,7 @@ while True:
             print("Temperature={0:0.1f}*C    Humidity={1:0.1f}%    time={2:d}:{3:d}({4:d}/{5:d})\n".format(sumT / 30, sumH / 30, tm.tm_hour + 9, tm.tm_min, tm.tm_mon, tm.tm_mday))
             if((sumT/30)>26):
                 os.system('sudo docker exec -it yolo_container /bin/bash -c "python3 detect.py --source 0 --weights yolov5s.pt"')
-            else:
-                os.system('sudo docker exec -it yolo_container /bin/bash -c "^C"')
-                #break
+                if((sumT/30)<26):
+                    os.system('sudo docker exec -it yolo_container /bin/bash -c "^C"')
             sumH=0.0
             sumT=0.0
