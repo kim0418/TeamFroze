@@ -74,7 +74,7 @@ function checkWifiConnection(callback) {
 // 스크립트 시작 시 와이파이 연결 상태를 확인하고 tem.py 실행
 checkWifiConnection(function(connected) {
   if (connected) {
-    exec('sudo docker exec -it container_name python3 /path/to/tem.py');
+    exec('sudo docker exec -it yolo_container python3 tem.py');
   }
 });
 
@@ -106,7 +106,7 @@ bleno.on('advertisingStart', function(error) {
                 console.log('WiFi config change result: ' + (error ? 'error ' + error : 'success'));
                 checkWifiConnection(function(connected) {
                   if (connected) {
-                    exec('sudo docker exec -it container_name python3 /path/to/tem.py');
+                    exec('sudo docker exec -it yolo_conatiner python3 tem.py');
                   } else {
                     console.log('WiFi connection failed.');
                   }
