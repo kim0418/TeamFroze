@@ -12,3 +12,8 @@ WorkingDirectory=/path/to/
 
 [Install]
 WantedBy=multi-user.target
+
+
+
+sudo systemctl enable bleno_wifi.service
+sudo systemctl start bleno_wifi.service
