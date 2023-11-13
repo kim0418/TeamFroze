@@ -20,6 +20,7 @@
 
 
 import cv2
+import os
 import Adafruit_DHT as dht
 import time
 #from /usr.src.app.lights
