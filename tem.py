@@ -56,5 +56,7 @@ while True:
                         process = None
                     #os.system(' "kill -SIGINT $(cat /tmp/detect_pid)"')
                     #os.system('sudo docker exec -it yolo_container /bin/bash -c "^C"')
+            if(cv2.waitKey(1) or 0xFF==27):
+                break
             sumH=0.0
             sumT=0.0
