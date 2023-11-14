@@ -23,6 +23,7 @@ import cv2
 import os
 import Adafruit_DHT as dht
 import time
+import subprocess
 #from /usr.src.app.lights
 
 timea = int(time.time())
