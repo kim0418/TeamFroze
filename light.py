@@ -4,22 +4,20 @@ import time
 # GPIO 핀 번호 모드 설정
 GPIO.setmode(GPIO.BCM)
 
+# GPIO 핀 설정 (입력, 풀다운 저항 활성화)
+light_pin = 22
+GPIO.setup(light_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
 try:
-    # GPIO 핀 설정 (입력, 풀다운 저항 활성화)
-    GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-
-    # 감지 기준값 설정
-    threshold = 0.5 
-
     while True:
         # 조도 센서 값 읽기
-        sensor_value = GPIO.input(15)
+        sensor_value = GPIO.input(light_pin)
         
-        # 빛 감지 여부 판단
-        if sensor_value > threshold:
-            print(1) # 빛을 감지함
+        # 빛 감지 여부 출력
+        if sensor_value == 0:
+            print("Light Detected")
         else:
-            print(0) # 빛을 감지하지 못함
+            print("Light Not Detected")
 
         time.sleep(1)
 
