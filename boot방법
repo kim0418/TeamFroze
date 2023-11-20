@@ -1,0 +1,9 @@
+# bash파일에서 다음코드양식에 맞추어서 코드를 작성한후 chmod +x run_scripts.sh 를하면 해당스크립트에 권한을 줄수있다.
+# crontab -e  명령어로 crontab을 열어서 @reboot /path/to/run_scripts.sh 형식에 맞추어서 명령어를 입력하면 boot마다 동작한다.
+
+docker exec my_container python /path/to/tem.py > /path/to/tem.log 2>&1 &
+docker exec my_container python /path/to/light.py > /path/to/light.log 2>&1 &
+
+
+sudo docker exec yolo_container python3 /usr/src/app/tem.py > /usr/src/app/tem.log 2>&1 &
+sudo docker exec yolo_container python3 /usr/src/app/light.py > /usr/src/app/light.log 2>&1 &
