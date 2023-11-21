@@ -51,7 +51,7 @@ try:
         # 빛 감지 여부에 따라 스크립트 실행
         if sensor_value == 0 and not running:
             print("Light Detected, Starting Script")
-            process = subprocess.Popen(["python3", "detect.py", "--source", "0", "--weights", "best.pt", "--conf", "0.25"])
+            process = subprocess.Popen(["python3", "detect.py", "--source", "0", "--weights", "best.pt", "--conf", "0.5"])
             running = True
         elif sensor_value != 0 and running:
             print("Light Not Detected, Stopping Script")
