@@ -19,7 +19,7 @@
 #         else:
 #             print("Light Not Detected")
 
-#         time.sleep(1)
+#         time.sleep(0.2)
 
 # finally:
 #     # GPIO 설정 초기화
@@ -60,7 +60,7 @@ try:
                 process = None
             running = False
 
-        time.sleep(1)
+        time.sleep(0.1)
 
 finally:
     # GPIO 설정 초기화
