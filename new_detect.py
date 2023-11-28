@@ -48,7 +48,7 @@ from google.cloud.firestore_v1.base_query import FieldFilter
 from datetime import datetime
 from pytz import timezone #pip install pytz
 
-cred = credentials.Certificate('/content/checkfreezer-d76a6-firebase-adminsdk-7ykja-bc3b0e8ef3.json') #firestore 키 경로 설정하기
+cred = credentials.Certificate('/usr/src/app/checkfreezer-d76a6-firebase-adminsdk-7ykja-48f76020d8.json') #firestore 키 경로 설정하기
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
